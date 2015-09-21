@@ -1,0 +1,27 @@
+<openerp>
+<data>
+
+    <!-- Add custom css to website Theme -->
+    <template id="website_tf.theme" name="website_tf Theme" inherit_id="website.theme">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" href='/website_tf/static/src/css/website_less.css' t-ignore="true"/>
+            <link rel="stylesheet" href='/website_tf/static/src/css/navbar.css' t-ignore="true"/>
+            <!--<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Tangerine'/>-->
+            <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Indie Flower'/>
+            <!--<link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'/>-->
+            <!--<link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>-->
+            <!--<link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'/>-->
+        </xpath>
+                <xpath expr="." position="inside">
+            <script src="/website_tf/static/src/js/sticky.js"></script>
+        </xpath>
+    </template>
+<!-- ADD STATIC NAVBAR
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="tf theme">
+        <xpath expr="." position="inside">
+            <script src="/website_tf/static/src/js/sticky.js"></script>
+        </xpath>
+    </template>
+-->
+</data>
+</openerp>
